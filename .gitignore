@@ -1,0 +1,27 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+brain/
+brain_legacy/
+
+# Dataset and test images
+brain_tumor_dataset/
+testImages/
+
+# Temporary generated images
+myimg.png
+test1.png
+
+# Cached dataset arrays
+Model/myimg_data.npy
+Model/myimg_data.txt.npy
+Model/myimg_label.npy
+Model/myimg_label.txt.npy
+
+# Local editor settings
+.vscode/
