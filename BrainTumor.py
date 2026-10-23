@@ -146,8 +146,7 @@ def trainTumorDetectionModel():
            loaded_model_json = json_file.read()
            classifier = model_from_json(loaded_model_json)
 
-        classifier.load_weights("Model/model_weights.h5")
-        classifier._make_predict_function()           
+        classifier.load_weights("Model/model_weights.h5")        
     else:
         X_trains, X_tests, y_trains, y_tests = train_test_split(x_train, y_train, test_size = 0.2, random_state = 0)
         classifier = Sequential() 
